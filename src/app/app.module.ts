@@ -10,12 +10,20 @@ import { InicioComponent } from './inicio/inicio.component';
 import {MatButtonModule} from '@angular/material/button';
 import { RegrasModalComponent } from './regras-modal/regras-modal.component';
 import {MatDialogModule} from '@angular/material/dialog';
+import { LoginComponent } from './login/login.component';
+import {MatInputModule} from '@angular/material/input';
+import { RecuperarSenhaComponent } from './recuperar-senha/recuperar-senha.component';
+import { CadastroComponent } from './cadastro/cadastro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
-    RegrasModalComponent
+    RegrasModalComponent,
+    LoginComponent,
+    RecuperarSenhaComponent,
+    CadastroComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -24,7 +32,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatDialogModule
+    MatDialogModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

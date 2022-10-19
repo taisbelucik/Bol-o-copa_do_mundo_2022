@@ -1,16 +1,28 @@
 <div class="container">
-    <div class="container-img">
-        <img src="./assets/logo_fifa_qatar.png" alt="">
+  <div class="row">
+    <div class="container-img col-12">
+      <img src="./assets/logo_fifa_qatar.png" alt="" />
     </div>
+  </div>
+
+  <div class="row">
     <div class="container-info">
-        <h1>Bolão Copa do Mundo - 2022</h1>
-        <div class="container-buttons">
-            <button mat-raised-button (click)="openDialog()">Como funciona</button>
-            <button mat-raised-button>Login</button>
-            <button mat-raised-button>Cadastro</button>
+      <div class="row">
+        <div class="col-12">
+          <h1>Bolão Copa do Mundo - 2022</h1>
         </div>
-
+      </div>
+      <div class="container-buttons">
+        <div class="row">
+          <div class="col-12">
+            <button mat-raised-button (click)="openDialog()">
+              Como funciona
+            </button>
+            <button mat-raised-button><a routerLink="/login">Login</a></button>
+            <button mat-raised-button><a routerLink="/cadastro">Cadastro</a></button>
+          </div>
+        </div>
+      </div>
     </div>
-
-    
+  </div>
 </div>

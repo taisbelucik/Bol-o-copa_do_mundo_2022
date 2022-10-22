@@ -14,6 +14,11 @@ import { LoginComponent } from './login/login.component';
 import {MatInputModule} from '@angular/material/input';
 import { RecuperarSenhaComponent } from './recuperar-senha/recuperar-senha.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
+import { ApostaInicialComponent } from './aposta-inicial/aposta-inicial.component';
+import { InformacaoApostaComponent } from './informacao-aposta/informacao-aposta.component';
+import { ResultadoComponent } from './resultado/resultado.component';
+import { TabelaConfrontoComponent } from './shared/tabela-confronto/tabela-confronto.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -23,6 +28,11 @@ import { CadastroComponent } from './cadastro/cadastro.component';
     LoginComponent,
     RecuperarSenhaComponent,
     CadastroComponent,
+    ApostaInicialComponent,
+    InformacaoApostaComponent,
+    ResultadoComponent,
+    TabelaConfrontoComponent,
+    
     
   ],
   imports: [
@@ -33,7 +43,9 @@ import { CadastroComponent } from './cadastro/cadastro.component';
     MatIconModule,
     MatButtonModule,
     MatDialogModule,
-    MatInputModule
+    MatInputModule,
+    MatCardModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

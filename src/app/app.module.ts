@@ -19,6 +19,7 @@ import { InformacaoApostaComponent } from './informacao-aposta/informacao-aposta
 import { ResultadoComponent } from './resultado/resultado.component';
 import { TabelaConfrontoComponent } from './shared/tabela-confronto/tabela-confronto.component';
 import {MatCardModule} from '@angular/material/card';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,7 @@ import {MatCardModule} from '@angular/material/card';
     MatDialogModule,
     MatInputModule,
     MatCardModule,
-
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

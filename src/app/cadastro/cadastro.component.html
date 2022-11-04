@@ -1,22 +1,22 @@
-<div class="container container-wrapper">
+<form [formGroup]="form" class="container container-wrapper">
   <div class="row">
       <div class="col-12">
           <div class="container-login">
               <h1>Cadastre-se</h1>
               <div class="container-login-input">
                 <mat-form-field class="example-full-width" appearance="fill">
-                  <mat-label>Nome</mat-label>
-                  <input matInput >
+                  <mat-label>Usuário</mat-label>
+                  <input matInput formControlName="usuario">
                 </mat-form-field>
                   <mat-form-field class="example-full-width" appearance="fill">
                       <mat-label>E-mail</mat-label>
-                      <input matInput >
+                      <input matInput formControlName="email">
                     </mat-form-field>
                     <mat-form-field class="example-full-width" appearance="fill">
                       <mat-label>Senha</mat-label>
-                      <input matInput>
+                      <input matInput formControlName="senha" type="password">
                     </mat-form-field>
-                    <button class="button-cadastro" mat-raised-button>
+                    <button class="button-cadastro" mat-raised-button (click)="submit()">
                       Cadastrar
                     </button>
               </div>
@@ -24,4 +24,4 @@
       </div>
 
   </div>
-</div>
+</form>

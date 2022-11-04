@@ -1,0 +1,21 @@
+mat-card {
+    width: 80%;
+  }
+  
+  table {
+    display: flex;
+    justify-content: center;
+  }
+  
+  td img {
+    width: 18px;
+  }
+  
+  td {
+    padding: 10px;
+   
+    
+  }
+
+
+  
